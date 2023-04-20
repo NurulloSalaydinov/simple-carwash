@@ -1,0 +1,100 @@
+{% extends 'wrapper.html' %}
+{% load static %}
+{% block title %}Buyurtma olish{% endblock %}
+{% block page %}Buyurtma olish{% endblock %}
+{% block content %}
+<ul class="order-detail_list">
+    <form action="" class="order-form">
+        <li class="order-detail_item">
+            <h1 class="order-detail_heading">
+                Mashina
+            </h1>
+            <select name="car_mark" id="" class="order_list_car_mark">
+                <option value="" selected style="display: none;">Markani tanlang</option>
+                <option value="chevrolet">Chevrolet</option>
+                <option value="hundai">Hyundai</option>
+                <option value="ravon">Ravon</option>
+                <option value="daewoo">Daewoo</option>
+                <option value="bmw">BMW</option>
+                <option value="kia">Kia</option>
+            </select>
+            <select name="car_model" id="">
+                <option value="" selected style="display: none;">Modelni tanlang</option>
+                <option value="chevrolet-malibu">Malibu</option>
+                <option value="chevrolet-spark">Spark</option>
+                <option value="hundai-santafe">Cobalt</option>
+                <option value="nexia">Nexia</option>
+                <option value="jentra">Jentra</option>
+            </select>
+            <select name="car_color" id="">
+                <option value="" selected style="display: none;">Rangni tanlang</option>
+                <option value="oq">oq</option>
+                <option value="qora">qora</option>
+                <option value="qizil">qizil</option>
+            </select>
+            <input type="text" placeholder="Davlat raqami" class="order-car_number" name="car_number">
+            <input type="text" placeholder="Telefon raqami" class="order-tel_number" name="tel_number">
+            <textarea name="car_comment" class="order-car_comment">Izoh</textarea>
+        </li>
+        <li class="order-detail_item">
+            <h1 class="order-detail_heading">
+                Xizmatlar
+            </h1>
+            <select name="car_mark" id="" class="order-car_wash_type">
+                <option value="" selected style="display: none;">Yuvish turi</option>
+                <option value="oddiy">Oddiy</option>
+                <option value="premium">Premium</option>
+            </select>
+            <div class="order-detail_checkboxes">
+                <input type="checkbox" name="chang_yutgich" id="chang_yutgich">
+                <label for="chang_yutgich">Chang yutgich</label>
+                <input type="checkbox" name="chang_yutgich2" id="chang_yutgich2">
+                <label for="chang_yutgich2">Ko‘pirtirgich</label>
+                <input type="checkbox" name="chang_yutgich3" id="chang_yutgich3">
+                <label for="chang_yutgich3">Hushbo‘ylik</label>
+            </div>
+        </li>
+        <li class="order-detail_item_info">
+            <h1 class="order-detail_heading">
+                Ma’lumotlar
+            </h1>
+            <div class="order-detail_info_wrapp">
+                <img class="order-detail_info_car" src="{% static 'assets/image/malibu.png' %}" alt="">
+                <div class="order-detail_car_subinfo">
+                    <img class="order_list_image_url" src="{% static 'assets/image/chevrolet-mark.png' %}" alt="">
+                    Malibu
+                </div>
+                <div class="order-detail_car_subinfo_number">
+                    <div class="order-detail_car_number">
+                        <span>60</span>
+                        <span class="order-detail_car_number_info">A 123 NN</span>
+                    </div>
+                    <div class="order-detail_customer_number">
+                        +998331011747
+                    </div>
+                </div>
+                <p class="order-detail_wash_type">
+                    <span>Yuvish turi:</span>
+                    <span class="order-detail_wash_type_info">Oddiy</span>
+                </p>
+                <p class="order-detail_service_type">
+                <p class="order-detail_service_heading">Xizmat turi:</p>
+                </p>
+                <p class="order-detail_comment_info">
+                    Izoh: <span class="order-detail_comment">Kechgi soat 21:00ga</span>
+                </p>
+                <p class="order-detail_total_qty">
+                    Narxi: 40 000 UZS
+                </p>
+                <div class="order-detail_buy">
+                    <button class="order-detail_buy_btn">Navbatga olish</button>
+                </div>
+            </div>
+        </li>
+    </form>
+</ul>
+{% endblock %}
+
+{% block script %}
+<script defer src="{% static 'assets/js/order.js' %}"></script>
+{% endblock %}

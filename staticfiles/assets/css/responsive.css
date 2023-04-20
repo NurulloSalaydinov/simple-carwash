@@ -1,0 +1,127 @@
+@media screen and (max-width: 1400px) {
+    :root {
+        --color-yellow: #FFB803;
+        --color-blue: #94B8FF;
+        --color-black: #333333;
+        --color-gray: #C5C7D3;
+        --color-white: #FFFFFF;
+        --size-big-headings: 72px;
+        --size-headings: 48px;
+        --size-small-headings: 40px;
+        --size-big-text: 30px;
+        --size-text: 24px;
+        --size-small-text: 18px;
+    }
+
+    header {
+        padding-top: 35px;
+    }
+
+
+    .header-side_bar {
+        position: fixed;
+        height: 100vh;
+        top: 50%;
+        transform: translateY(-44%);
+    }
+}
+
+
+@media screen and (max-width: 1100px) {
+    :root {
+        --size-big-headings: 72px;
+        --size-headings: 48px;
+        --size-small-headings: 40px;
+        --size-big-text: 30px;
+        --size-text: 24px;
+        --size-small-text: 18px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    :root {
+        --size-big-headings: 68px;
+        --size-headings: 44px;
+        --size-small-headings: 38px;
+        --size-big-text: 29px;
+        --size-text: 23px;
+        --size-small-text: 18px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    :root {
+        --size-big-headings: 64px;
+        --size-headings: 48px;
+        --size-small-headings: 40px;
+        --size-big-text: 30px;
+        --size-text: 24px;
+        --size-small-text: 18px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    :root {
+        --size-big-headings: 72px;
+        --size-headings: 48px;
+        --size-small-headings: 40px;
+        --size-big-text: 30px;
+        --size-text: 24px;
+        --size-small-text: 18px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    :root {
+        --size-big-headings: 72px;
+        --size-headings: 48px;
+        --size-small-headings: 40px;
+        --size-big-text: 30px;
+        --size-text: 24px;
+        --size-small-text: 18px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    :root {
+        --size-big-headings: 72px;
+        --size-headings: 48px;
+        --size-small-headings: 40px;
+        --size-big-text: 30px;
+        --size-text: 24px;
+        --size-small-text: 18px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    :root {
+        --size-big-headings: 72px;
+        --size-headings: 48px;
+        --size-small-headings: 40px;
+        --size-big-text: 30px;
+        --size-text: 24px;
+        --size-small-text: 18px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    :root {
+        --size-big-headings: 72px;
+        --size-headings: 48px;
+        --size-small-headings: 40px;
+        --size-big-text: 30px;
+        --size-text: 24px;
+        --size-small-text: 18px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    :root {
+        --size-big-headings: 72px;
+        --size-headings: 48px;
+        --size-small-headings: 40px;
+        --size-big-text: 30px;
+        --size-text: 24px;
+        --size-small-text: 18px;
+    }
+}

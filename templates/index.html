@@ -1,0 +1,56 @@
+{% extends 'wrapper.html' %}
+{% load static %}
+
+{% block page %}Bosh sahifa{% endblock page %}
+{% block title %}Bosh sahifa{% endblock title %}
+
+{% block content %}
+    <div class="main-hero_info_wrapper">
+        <ul class="main-hero_list">
+            <li class="main-hero_item_blue vanilla-item" data-tilt data-tilt-scale="1.1">
+                <img src="{% static 'assets/image/money-recive.png' %}" alt="">
+                <p class="main-hero_title">
+                    Kirim
+                </p>
+                <p class="main-hero_money">
+                    +0 UZS
+                </p>
+            </li>
+            <li class="main-hero_item_yellow vanilla-item" data-tilt data-tilt-scale="1.1">
+                <img src="{% static 'assets/image/money-send.png' %}" alt="">
+                <p class="main-hero_title">
+                    Chiqim
+                </p>
+                <p class="main-hero_money">
+                    -0 UZS
+                </p>
+            </li>
+            <li class="main-hero_item_blue vanilla-item" data-tilt data-tilt-scale="1.1">
+                <img src="{% static 'assets/image/car.png' %}" alt="">
+                <p class="main-hero_title">
+                    Navbat
+                </p>
+                <p class="main-hero_count">
+                    0 ta
+                </p>
+            </li>
+            <li class="main-hero_item_yellow vanilla-item" data-tilt data-tilt-scale="1.1">
+                <img src="{% static 'assets/image/car-washing.png' %}" alt="">
+                <p class="main-hero_title">
+                    Yuvilmoqda
+                </p>
+                <p class="main-hero_count">
+                    0 ta
+                </p>
+            </li>
+        </ul>
+        <ul class="main-hero_weather_app">
+            <li class="main-hero_weather_app_item">
+                <h1 class="main-hero_weather_heading" style="text-align:center;">Bugun</h1>
+            </li>
+            <li>
+                <h1 style="color:white;text-align:center;margin-top:50px">Malumotlar topilmadi</h1>
+            </li>
+        </ul>
+    </div>
+{% endblock content %}

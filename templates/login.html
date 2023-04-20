@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://carwash.binokor-asaka.uz/">
+    <meta property="og:title" content="Car Wash">
+    <meta property="og:description" content="Simple CRM System for CarWash">
+    <meta property="og:image"
+        content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+
+    <!-- links -->
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.3.0/css/all.css">
+    <title>Login Car Wash</title>
+</head>
+
+<body>
+    <div class="login-hero">
+        <div class="section-wrapp">
+            <div class="login-container">
+                <ul class="login-hero_list">
+                    <li class="login-hero_item">
+                        <img src="{% static 'assets/image/car-login.png' %}" class="login-hero_image" alt="">
+                    </li>
+                    <li class="login-hero_item">
+                        <form method="post" class="login-hero_form">
+                            {% csrf_token %}
+                            <h1 class="login-hero_form_heading">
+                                Kirish
+                            </h1>
+                            <p class="login-hero_form_text">
+                                Tizimga kirish uchun login va parolingizni kiriting
+                            </p>
+                            <input type="text" name="username" placeholder="User name">
+                            <input type="password" name="password" placeholder="Parol">
+                            <div class="login-hero_form_btn_wrapper">
+                                <button class="login-hero_form_btn">Kirish</button>
+                            </div>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="{% static 'assets/js/login.js' %}"></script>
+</body>
+
+</html>

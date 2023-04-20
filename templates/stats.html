@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://metatags.io/">
+    <meta property="og:title" content="Car Wash">
+    <meta property="og:description" content="description here">
+    <meta property="og:image"
+        content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+
+    <!-- links -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.3.0/css/all.css">
+
+    <title>Car Wash | Statistika</title>
+</head>
+
+<body>
+    <header>
+        <div class="section-wrapp">
+            <div class="container">
+                <div class="header-top_wrapper">
+                    <h1 class="main-header_title">
+                        Statistika
+                    </h1>
+                    <div class="header-info_wrapper">
+                        <div class="header-info_item_wrapper">
+                            <i class="fa-solid fa-clock"></i>
+                            <span class="header-time_info"></span>
+                        </div>
+                        <div class="header-info_item_wrapper">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <span class="header-date_info"></span>
+                        </div>
+                        <div class="header-info_item_wrapper">
+                            <i class="fa-solid fa-clouds"></i>
+                            <span class="booked-wzs-day-number">22°</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-side_bar_wrapper">
+            <div class="header-side_bar">
+                <nav class="header_navigation">
+                    <ul class="nav_items_wrapper">
+                        <li class="nav_item selected"><i class="fa-solid fa-house"></i></li>
+                        <li class="nav_item"><i class="fa-solid fa-square-plus"></i></li>
+                        <li class="nav_item"><i class="fa-solid fa-car-mirrors"></i></li>
+                        <li class="nav_item"><i class="fa-solid fa-car-wash"></i></li>
+                        <li class="nav_item"><i class="fa-solid fa-square-dollar"></i></li>
+                        <li class="nav_item nav_item_last"><i class="fa-duotone fa-gear"></i></li>
+                        <li class="nav_item_helper"></li>
+                    </ul>
+                </nav>
+                <div class="nav_bg"></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="stats-hero">
+            <div class="container">
+                <div class="section-wrapp">
+                    <div class="stats-info_wrapper">
+                        <ul class="stats-hero_upper_sort_list">
+                            <li class="stats-hero_upper_item">
+                                <ul class="stats-hero_inner_sort_list">
+                                    <li class="stats-hero_inner_item">
+                                        <button class="stats-sort_opener">
+                                            <i class="fa-regular fa-filter"></i>Saralash</button>
+                                    </li>
+                                    <li class="stats-hero_inner_item">
+                                        <form action="" name="search_form" class="stats-hero_form">
+                                            <input type="text" name="search"
+                                                placeholder="Ishchi, chiqim nomi bo‘yicha qidiruv">
+                                        </form>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="stats-hero_upper_item">
+                                <button class="stats-print_btn" onclick="print()">
+                                    <i class="fa-regular fa-download"></i>
+                                    Saqlash (PDF)
+                                </button>
+                            </li>
+                        </ul>
+                        <ul class="stats-hero_upper_info">
+                            <li class="stats-hero_upper_info_item">№</li>
+                            <li class="stats-hero_upper_info_item">Nomi</li>
+                            <li class="stats-hero_upper_info_item">Sana va vaqt</li>
+                            <li class="stats-hero_upper_info_item">summa</li>
+                            <li class="stats-hero_upper_info_item">Izoh</li>
+                            <li class="stats-hero_upper_info_item">
+                                <i class="fa-regular fa-ellipsis-vertical"></i>
+                            </li>
+                        </ul>
+                        <ul class="stats-hero_info_list">
+                            <li class="stats-hero_info_item">1</li>
+                            <li class="stats-hero_info_item">Justin Septimus
+                            </li>
+                            <li class="stats-hero_info_item">
+                                <p><i class="fa-solid fa-circle"></i> To‘landi</p>
+                                14/APR/2022 10:59
+                            </li>
+                            <li class="stats-hero_info_item">1 000 000 UZS
+                            </li>
+                            <li class="stats-hero_info_item">
+                                Bir narsani, nimadir, bir narsani, nimadir, bir narsani, nimadir,
+                            </li>
+                            <li class="stats-hero_info_item more">
+                                Ko‘proq
+                                <i class="fa-regular fa-ellipsis-vertical"></i>
+                            </li>
+                            <li class="stats-hero_info_item_delete">
+                                <!-- <form action=""> -->
+                                <button type="submit" class="stats-hero_info_item_delete_btn">
+                                    O‘chirish
+                                </button>
+                                <button type="reset" class="stats-hero_info_item_reset_btn">
+                                    <i class="fa-regular fa-xmark"></i>
+                                </button>
+                                <!-- </form> -->
+                            </li>
+                        </ul>
+                        <ul class="stats-hero_info_list">
+                            <li class="stats-hero_info_item">2</li>
+                            <li class="stats-hero_info_item">John Doe
+                            </li>
+                            <li class="stats-hero_info_item">
+                                <p><i class="fa-solid fa-circle"></i> To‘landi</p>
+                                14/APR/2022 10:59
+                            </li>
+                            <li class="stats-hero_info_item">1 000 000 UZS
+                            </li>
+                            <li class="stats-hero_info_item">
+                                Bir narsani, nimadir, bir narsani, nimadir, bir narsani,
+                                nimadir,
+                            </li>
+                            <li class="stats-hero_info_item more">
+                                Ko‘proq
+                                <i class="fa-regular fa-ellipsis-vertical"></i>
+                            </li>
+                            <li class="stats-hero_info_item_delete">
+                                <!-- <form action=""> -->
+                                <button type="submit" class="stats-hero_info_item_delete_btn">
+                                    O‘chirish
+                                </button>
+                                <button type="reset" class="stats-hero_info_item_reset_btn">
+                                    <i class="fa-regular fa-xmark"></i>
+                                </button>
+                                <!-- </form> -->
+                            </li>
+                        </ul>
+                        <div class="stats-hero_footer">
+                            <ul class="stats-hero_footer_list">
+                                <li class="stats-hero_footer_item">
+                                    Chiqimlar bir sahifada:
+                                    <form action="">
+                                        <select name="qty_of_items" class="stats-hero_footer_select">
+                                            <option value="10">10</option>
+                                            <option value="15">15</option>
+                                            <option value="20">20</option>
+                                            <option value="25">25</option>
+                                            <option value="30">30</option>
+                                            <option value="35">35</option>
+                                            <option value="40">40</option>
+                                            <option value="45">45</option>
+                                            <option value="50">50</option>
+                                        </select>
+                                    </form>
+                                </li>
+                                <li class="stats-hero_footer_item">
+                                    276 dan 1-10
+                                </li>
+                                <li class="stats-hero_footer_item">
+                                    <ul class="stats-hero_footer_pagination_list">
+                                        <li class="stats-hero_pagination_item arrow_left">
+                                            <a href="#">
+                                                <i class="fa-regular fa-chevron-left"></i>
+                                            </a>
+                                        </li>
+                                        <li class="stats-hero_pagination_item_page">
+                                            1 / 28
+                                        </li>
+                                        <li class="stats-hero_pagination_item arrow_right">
+                                            <a href="#">
+                                                <i class="fa-regular fa-chevron-right"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="section-wrapp">
+            <div class="container">
+                <ul class="footer-list">
+                    <li class="footer-item">
+                        Copyright © 2023. CarWash. All rights reserved.
+                    </li>
+                    <li class="footer-item">
+                        <ul class="footer-inner_list">
+                            <li class="footer-inner_item">
+                                <a href="#">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="footer-inner_item">
+                                <a href="#">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/js/vanilla-tilt.min.js"></script>
+    <script src="./assets/js/stats.js"></script>
+</body>
+
+</html>
